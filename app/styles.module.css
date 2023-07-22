@@ -1,44 +1,159 @@
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Grid System */
+
+.container:after, 
+.container:before, 
+.row:after, 
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin: 0 -8px;
+}
+
+.col {
+    float: left;
+    width: 100%;
+    padding: 0 8px;
+}
+
+/* Columns */
+.col.s1 {width: 8.33333%;}
+.col.s2 {width: 16.66666%;}
+.col.s3 {width: 24.99999%;}
+.col.s4 {width: 33.33333%;}
+.col.s5 {width: 41.66666%;}
+.col.s6 {width: 49.99999%;}
+.col.s7 {width: 58.33333%;}
+.col.s8 {width: 66.66666%;}
+.col.s9 {width: 74.99999%;}
+.col.s10 {width: 83.33333%;}
+.col.s11 {width: 91.66666%;}
+.col.s12 {width: 99.99999%;}
+
+/* Medium (Tablet) Size Columns */
+@media (min-width: 601px) {
+    .col.m1 {width: 8.33333%;}
+    .col.m2 {width: 16.66666%;}
+    .col.m3 {width: 24.99999%;}
+    .col.m4 {width: 33.33333%;}
+    .col.m5 {width: 41.66666%;}
+    .col.m6 {width: 49.99999%;}
+    .col.m7 {width: 58.33333%;}
+    .col.m8 {width: 66.66666%;}
+    .col.m9 {width: 74.99999%;}
+    .col.m10 {width: 83.33333%;}
+    .col.m11 {width: 91.66666%;}
+    .col.m12 {width: 99.99999%;}
+}
+
+/* Large Size Columns */
+@media (min-width: 993px) {
+    .col.l1 {width: 8.33333%;}
+    .col.l2 {width: 16.66666%;}
+    .col.l3 {width: 24.99999%;}
+    .col.l4 {width: 33.33333%;}
+    .col.l5 {width: 41.66666%;}
+    .col.l6 {width: 49.99999%;}
+    .col.l7 {width: 58.33333%;}
+    .col.l8 {width: 66.66666%;}
+    .col.l9 {width: 74.99999%;}
+    .col.l10 {width: 83.33333%;}
+    .col.l11 {width: 91.66666%;}
+    .col.l12 {width: 99.99999%;}
+}
+
+.container { border: 1px solid rgb(255, 72, 72); }
+.row { border: 1px solid rgb(27, 39, 2); }
+.col { border: 1px solid rgb(94, 242, 255); }
+/* .col [class^="s"] { border: 1px solid rgb(72, 255, 173); }
+.col [class^="m"] { border: 1px solid rgb(72, 72, 255); }
+.col [class^="l"] { border: 1px solid rgb(255, 72, 224); } */
+
 .header {
-    padding: 1.5rem 0;
-    background-color: #E5E5E5;
+    /* padding: 1.5rem; */
+    /* height: 30vh; */
+    /* background: url('../public/image/Header.svg') no-repeat; */
+    /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); */
+    /* background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); */
+    /* background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
+    /* background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%); */
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
 }
 
-.column_i, .column_ii {
+.header_col_i, .header_col_ii {
     /* border: 1px solid red; */
-    width: 70%;
+    width: 60%;
     display: flex;
-    margin: auto;
-    padding: .4rem 0;
-}
-
-.column_i {
-    /* border: 1px solid red; */
     justify-content: space-between;
     align-items: baseline;
+    margin: auto;
+    /* padding: 0; */
+    /* padding: .4rem 0; */
+   
+}
+
+.header_col_i {
+    /* border: 1px solid red; */
+    /* align-items: baseline; */
+}
+
+.header_col_i h1 {
+    border: 1px solid red;
+    color: #595959;
+    /* text-shadow: 15px 4px 20px 0px rgba(0, 0, 0, 0.44); */
+    /* font-family: Roboto; */
+    /* font-size: 2.5rem; */
+    /* font-style: normal; */
+    /* font-weight: 500; */
+    /* line-height: 61px; 129.787% */
+    /* letter-spacing: -0.705px; */
+    /* text-transform: uppercase; */
 }
 
 .title {
-    /* border: 1px solid red; */
-    width: 50%;
-    font-size: 3rem;
+
 }
 
-.column_ii {
+.navs {
     /* border: 1px solid red; */
-    justify-content: flex-end;
+    color: #4c4c4c;
+}
+
+.navs > a {
+    margin-left: 1.7rem;
+}
+
+.header_col_ii {
+    /* padding-bottom: 2rem; */
+    /* border: 1px solid red; */
+    /* justify-content: flex-end; */
 }
 
 .searchField {
+    /* text-align: right; */
     display: flex;
-    align-items: center;
+    align-items: center; 
     padding: .5rem;
     border-radius: 5px;
     background-color: #ffffff;
 }
 
 .searchField > i {
-    padding: 0 1rem;
-    border-right: 1px solid #E5E5E5;
+    /* padding: 0 1rem; */
+    /* border-right: 1px solid #E5E5E5; */
 }
 
 .searchField > input {

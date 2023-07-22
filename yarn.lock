@@ -283,6 +283,11 @@ typescript@5.1.6:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.1.6.tgz#02f8ac202b6dad2c0dd5e0913745b47a37998274"
   integrity sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==
 
+w3-css@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/w3-css/-/w3-css-4.1.0.tgz#7872f2738d96a5732bac7718869151e3a5373ce4"
+  integrity sha512-nBomstRa3ITEDFG3EsYvVijueT3O1iwmjf96656VOR2BG6cwfkKwtwy/Gat7golUaA9ULPZPpo/Vj+3mYkeVfw==
+
 watchpack@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.4.0.tgz#fa33032374962c78113f93c7f2fb4c54c9862a5d"
