@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 16px;
 }
 
 /* Grid System */
@@ -17,7 +17,7 @@
 }
 
 .row {
-    margin: 0 -8px;
+    /* margin: 0 -8px; */
 }
 
 .col {
@@ -26,7 +26,7 @@
     padding: 0 8px;
 }
 
-/* Columns */
+/* Small (Phones) Size Columns */
 .col.s1 {width: 8.33333%;}
 .col.s2 {width: 16.66666%;}
 .col.s3 {width: 24.99999%;}
@@ -72,6 +72,26 @@
     .col.l12 {width: 99.99999%;}
 }
 
+@media (max-width: 600px) {
+    .hide_small {
+      display: none !important;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+    .hide_medium{
+        display: none !important;
+    }
+}
+
+@media (min-width: 993px) {
+    .hide_large {
+        display: none !important;
+    }
+}
+  
+  
+
 .container { border: 1px solid rgb(255, 72, 72); }
 .row { border: 1px solid rgb(27, 39, 2); }
 .col { border: 1px solid rgb(94, 242, 255); }
@@ -113,6 +133,7 @@
 .header_col_i h1 {
     border: 1px solid red;
     color: #595959;
+    /* font-size: 1rem; */
     /* text-shadow: 15px 4px 20px 0px rgba(0, 0, 0, 0.44); */
     /* font-family: Roboto; */
     /* font-size: 2.5rem; */

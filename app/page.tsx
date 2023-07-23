@@ -18,7 +18,10 @@ export default function Page() {
                     <div className={`${styles.col} ${styles.s4}`}>Column 1 content</div>
                     <div className={`${styles.col} ${styles.s4}`}>Column 2 content</div>
                     <div className={`${styles.col} ${styles.s4}`}>Column 3 content</div>
+                    <h1>Hello there!</h1>
                 </div>
+                <h1>Hello there!</h1>
+                
             {/* <section className={`${styles.header_col_i} w3-row`}>
                 <div className={`${roboto.className} ${styles.title} w3-col m12 l10`}>
                     <h1>Student Loan Bio-data Submission</h1>
