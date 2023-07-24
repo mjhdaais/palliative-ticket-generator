@@ -15,10 +15,19 @@ const roboto = Roboto({
 export default function Page() {
     return <header className={`${roboto.className} ${styles.header}`}>
         {/* Navs */}
-        <div className={`${styles.container} ${styles.hide_small} ${styles.navs}`}>
-            <a href="#" className={`${styles.col} ${styles.m4}`}>About</a>
-            <a href="#" className={`${styles.col} ${styles.m4}`}>Contact</a>
-            <a href="#" className={`${styles.col} ${styles.m4}`}>FAQs</a>
+        <div className={`${styles.navs}`}>
+            <div className={`${styles.container}`}>
+                <div className={`${styles.row} ${styles.nav_wrapper}`}>
+                    <div className={`${styles.col} ${styles.m6} ${styles.nav_links}`}>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                    <div className={`${styles.col} ${styles.m6} ${styles.nav_button}`}>
+                        <button>Submit Your Bio-data Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         {/* Banner */}
