@@ -171,7 +171,7 @@
 
 .search_field {
     /* border: 1px solid red; */
-    margin-top: -25px;
+    margin-top: -19px;
 }
 
 .search_field div {
@@ -188,20 +188,50 @@
 }
 
 .search_field input {
-    padding: .5rem 0;
+    padding: .6rem 0;
     margin: 0 8px;
     border: none;
     outline: none;
 }
 
 .search_field button {
-    padding: .6rem 0;
+    padding: .7rem 0;
     border: none;
     outline: none;
     background: #4c4c4c;
     color: #ffffff;
     border-radius: 2px;
+    cursor: pointer;
 }
+
+.features {
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.features_row {
+    /* border: 1px solid red;  */
+    /* margin-top: 2rem; */
+}
+
+.features_row div {
+    /* border: 1px solid red;  */
+    padding-right: 1.5rem;
+    margin-top: 1.5rem;
+    
+}
+
+.features_row div h3 {
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
 
 .intro {
     padding: 2rem;

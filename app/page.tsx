@@ -53,10 +53,10 @@ export default function Page() {
         </div>
 
         {/* Intro */}
-        {/* <div className={`${styles.intro}`}>
-            <div className={`${styles.container} ${styles.intro_row}`}>
+        <div className={`${styles.features}`}>
+            <div className={`${styles.container} ${styles.features_row}`}>
                 <div className={`${styles.col} ${styles.m6}`}>
-                    <h2>Bio-data Submission</h2>
+                    <h3>Bio-data Submission</h3>
                     <p>
                         Bio-data evaluation plays a crucial role in assessing the financial 
                         capacity and eligibility of applicants in governmental student loan applications. 
@@ -65,7 +65,7 @@ export default function Page() {
                 </div>
 
                 <div className={`${styles.col} ${styles.m6}`}>
-                    <h2>Student Count and Analytics</h2>
+                    <h3>Student Count and Analytics</h3>
                     <p>
                         Analytics plays a crucial role in governmental student loan applications, 
                         providing accurate student count information and valuable insights into student trends.
@@ -73,9 +73,9 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className={`${styles.container} ${styles.intro_row}`}>
+            <div className={`${styles.container} ${styles.features_row}`}>
                 <div className={`${styles.col} ${styles.m6}`}>
-                    <h2>Payment of a Refundable Fee</h2>
+                    <h3>Payment of a Refundable Fee</h3>
                     <p>
                         As part of the official and institutional procedures, it is a mandatory requirement for all 
                         students to remit a refundable fee payment of N200 upon the submission of their comprehensive and 
@@ -84,14 +84,14 @@ export default function Page() {
                 </div>
 
                 <div className={`${styles.col} ${styles.m6}`}>
-                    <h2>Privacy and Data Protection</h2>
+                    <h3>Privacy and Data Protection</h3>
                     <p>
                         Safeguarding data privacy is paramount in governmental student loan applications to protect individuals' 
                         personal information and ensure their trust in the process.
                     </p>
                 </div>
             </div>
-        </div> */}
+        </div>
 
         {/* Sub Section */}
         {/* <div className={`${styles.sub_section}`}>
