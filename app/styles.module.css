@@ -160,11 +160,12 @@
 }
 
 .banner div h1 {
-    width: 25ch;
+    border: 1px solid red;
+    /* width: 25ch; */
 }
 
 .search_field {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin-top: -25px;
 }
 
