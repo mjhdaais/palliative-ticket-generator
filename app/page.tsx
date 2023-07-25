@@ -48,7 +48,7 @@ export default function Page() {
             <div className={`${styles.container}`}>
                 <input type="search" placeholder='Assessment Status using NIN (National Identification Number)' 
                 className={`${styles.col} ${styles.s10}`} />
-                <button className={`${styles.col} ${styles.s2}`}>Search</button>
+                <button className={`${styles.col} ${styles.s2}`}>Check</button>
             </div>
         </div>
 
