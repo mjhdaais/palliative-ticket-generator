@@ -22,7 +22,9 @@ export default function Page() {
                         <a href="#" className={`${styles.hide_small}`}>About</a>
                         <a href="#" className={`${styles.hide_small}`}>Contact</a>
                         <a href="#" className={`${styles.hide_small}`}>FAQs</a>
-                        <i className={`${styles.hide_medium} ${styles.hide_large}`}><FontAwesomeIcon icon={faBars} /></i>
+                        <i className={`${styles.hide_medium} ${styles.hide_large} ${styles.bars}`}>
+                            <FontAwesomeIcon icon={faBars} />
+                        </i>
                     </div>
                     
                     <div className={`${styles.col} ${styles.m6} ${styles.nav_button}`}>
@@ -33,17 +35,20 @@ export default function Page() {
         </div>
 
         {/* Banner */}
-        {/* <div className={`${styles.banner}`}>
-            <div className={`${styles.container} ${styles.banner}`}>
+        <div className={`${styles.banner}`}>
+            <div className={`${styles.container}`}>
                 <h1>Student Loan Bio-data Submission</h1>
             </div>
-        </div> */}
+        </div>
 
         {/* Search Field */}
-        {/* <div className={`${styles.search_field}`}>
-            <input type="search" />
-            <button>Search</button>
-        </div> */}
+        <div className={`${styles.search_field}`}>
+            <div className={`${styles.container}`}>
+                <input type="search" placeholder='Check Assessment Status using NIN (National Identification Number)' 
+                className={`${styles.col} ${styles.s10}`} />
+                <button className={`${styles.col} ${styles.s2}`}>Search</button>
+            </div>
+        </div>
 
         {/* Intro */}
         {/* <div className={`${styles.intro}`}>
