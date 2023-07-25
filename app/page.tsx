@@ -1,5 +1,5 @@
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import styles from './styles.module.css'
 import { Roboto } from 'next/font/google'
 
@@ -19,10 +19,12 @@ export default function Page() {
             <div className={`${styles.container}`}>
                 <div className={`${styles.row} ${styles.nav_wrapper}`}>
                     <div className={`${styles.col} ${styles.m6} ${styles.nav_links}`}>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
-                        <a href="#">FAQs</a>
+                        <a href="#" className={`${styles.hide_small}`}>About</a>
+                        <a href="#" className={`${styles.hide_small}`}>Contact</a>
+                        <a href="#" className={`${styles.hide_small}`}>FAQs</a>
+                        <i className={`${styles.hide_medium} ${styles.hide_large}`}><FontAwesomeIcon icon={faBars} /></i>
                     </div>
+                    
                     <div className={`${styles.col} ${styles.m6} ${styles.nav_button}`}>
                         <button>Submit Your Bio-data Now</button>
                     </div>
@@ -31,20 +33,20 @@ export default function Page() {
         </div>
 
         {/* Banner */}
-        <div className={`${styles.banner}`}>
+        {/* <div className={`${styles.banner}`}>
             <div className={`${styles.container} ${styles.banner}`}>
                 <h1>Student Loan Bio-data Submission</h1>
             </div>
-        </div>
+        </div> */}
 
         {/* Search Field */}
-        <div className={`${styles.search_field}`}>
+        {/* <div className={`${styles.search_field}`}>
             <input type="search" />
             <button>Search</button>
-        </div>
+        </div> */}
 
         {/* Intro */}
-        <div className={`${styles.intro}`}>
+        {/* <div className={`${styles.intro}`}>
             <div className={`${styles.container} ${styles.intro_row}`}>
                 <div className={`${styles.col} ${styles.m6}`}>
                     <h2>Bio-data Submission</h2>
@@ -82,20 +84,20 @@ export default function Page() {
                     </p>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         {/* Sub Section */}
-        <div className={`${styles.sub_section}`}>
+        {/* <div className={`${styles.sub_section}`}>
             <div className={`${styles.container} ${styles.row}`}>
                 <p className={`${styles.col} ${styles.m8}`}>
                     Promoting Equitable Financial Assessments: Empowering Students through Transparent Evaluations
                 </p>
                 <button className={`${styles.col} ${styles.m4} `}>Submit Your Bio-data Now</button>
             </div>
-        </div>
+        </div> */}
 
         {/* Footer */}
-        <div className={`${styles.footer}`}>
+        {/* <div className={`${styles.footer}`}>
             <div className={`${styles.container}`}>
                 <p className={`${styles.col} ${styles.m3}`}>EGL</p>
                 <p className={`${styles.col} ${styles.m3}`}>About</p>
@@ -103,7 +105,7 @@ export default function Page() {
                 <p className={`${styles.col} ${styles.m3}`}>edugovloans@gmail.com</p>
                 <p className={``}>© 2019 Edugovloans. All rights reserved. </p>
             </div>
-        </div>
+        </div> */}
 
 
                 
