@@ -38,6 +38,8 @@ export default function Page() {
         <div className={`${styles.banner}`}>
             <div className={`${styles.container}`}>
                 <h1>Student Loan Bio-data Submission</h1>
+                <p>Student Loan Bio-data</p>
+                <p>Submission</p>
             </div>
         </div>
 
