@@ -96,10 +96,10 @@ export default function Page() {
         {/* CTA Section */}
         <div className={`${styles.cta_section}`}>
             <div className={`${styles.container}`}>
-                <p>
+                <p className={`${styles.first_child}`}>
                     Promoting Equitable Financial Assessments: Empowering Students through Transparent Evaluations
                 </p>
-                <p>
+                <p className={`${styles.last_child}`}>
                     <button>Submit Your Bio-data Now</button>
                 </p>
                 

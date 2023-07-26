@@ -243,30 +243,32 @@
 .cta_section div {
     /* border: 1px solid red; */
     display: flex;
-    gap: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
-.cta_section p, .cta_section button {
+.cta_section p {
     /* border: 1px solid red; */
+
 }
 
-.cta_section p:first-child {
+.cta_section .first_child {
     width: 90%;
+    padding-right: 1.5rem;
     font-size: 1.3rem;
 }
 
-.cta_section p:last-child {
+.cta_section .last_child {
     width: 30%;
     display: flex;
     align-items: end;
     justify-content: flex-end;
+    padding-bottom: 10px;
 }
 
-.cta_section p:last-child button {
+.cta_section .last_child button {
     width: 100%;
-    padding: .5rem .7rem;
+    padding: .8rem .7rem;
     border: none;
     border-radius: 2px;
     background: #4c4c4c;
@@ -276,12 +278,40 @@
 }
 
 @media (max-width: 600px) {
-    .cta_section div { flex-wrap: wrap; }
-    .cta_section p:last-child {
+    .cta_section div { 
+        flex-wrap: wrap; 
+    }
+ 
+    .cta_section .first_child, 
+    .cta_section .last_child {
         width: 100%;
+    }
+
+    .cta_section .first_child {
+        padding-bottom: 1.5rem;
+    }
+
+    .cta_section .last_child {
+        padding-bottom: 0;
     }
 }
 
+@media (max-width: 992px) and (min-width: 601px) {
+    .cta_section div { 
+        flex-wrap: wrap; 
+    }
+
+    .cta_section .first_child {
+        padding-bottom: 1rem;
+    }
+
+    .cta_section .last_child {
+        padding-bottom: 0;
+    }
+    /* .cta_section .last_child button {
+        width: 70%;
+    } */
+}
 
 
 
