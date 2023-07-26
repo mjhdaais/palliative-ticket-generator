@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import styles from './styles.module.css'
 import { Roboto } from 'next/font/google'
 
@@ -106,35 +106,22 @@ export default function Page() {
             </div>
         </div>
 
-        {/* Footer */}
-        {/* <div className={`${styles.footer}`}>
+        {/* Top Footer */}
+        <div className={`${styles.top_footer}`}>
             <div className={`${styles.container}`}>
-                <p className={`${styles.col} ${styles.m3}`}>EGL</p>
-                <p className={`${styles.col} ${styles.m3}`}>About</p>
-                <p className={`${styles.col} ${styles.m3}`}>Contact</p>
-                <p className={`${styles.col} ${styles.m3}`}>edugovloans@gmail.com</p>
-                <p className={``}>© 2019 Edugovloans. All rights reserved. </p>
+                <p className={`${styles.logo}`}>EGL</p>
+                <div className={`${styles.about}`}>
+                    <p>About</p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam placeat distinctio odit, quis necessitatibus adipisci, ratione numquam voluptates quisquam at laudantium tempora magnam repellat culpa autem fugiat nisi reprehenderit optio.
+                    </p>
+                </div>
+                <div className={`${styles.contact}`}>
+                    <p>Contact</p>
+                    <p><span><FontAwesomeIcon icon={faEnvelope} /></span> edugovloans@gmail.com</p>
+                    <p><span><FontAwesomeIcon icon={faPhone} /></span> 090-6986-948</p>
+                </div>
             </div>
-        </div> */}
-
-
-                
-            {/* <section className={`${styles.header_col_i} w3-row`}>
-                <div className={`${roboto.className} ${styles.title} w3-col m12 l10`}>
-                    <h1>Student Loan Bio-data Submission</h1>
-                </div>
-                <div className={`${styles.navs} w3-hide-small w3-hide-medium l2`}>
-                    <a href="#" className=''>About</a>
-                    <a href="#" className=''>Contact</a>
-                    <a href="#" className=''>FAQs</a>
-                </div>
-            </section>
-            <section className={`${styles.header_col_ii}`}>
-                <div className=''></div>
-                <div className={`${styles.searchField}`}>
-                    <input type="search" placeholder="Check Assessment Status using NIN (National Identification Number)"/>
-                    <button>Check</button>
-                </div>
-            </section> */}
+        </div>
         </header>
 }
