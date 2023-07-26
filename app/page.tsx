@@ -123,5 +123,12 @@ export default function Page() {
                 </div>
             </div>
         </div>
+
+        {/* Bottom Footer */}
+        <div className={`${styles.bottom_footer}`}>
+            <div className={`${styles.container}`}>
+                <span>© 2019 Edugovloans. All rights reserved. </span>
+            </div>
+        </div>
         </header>
 }

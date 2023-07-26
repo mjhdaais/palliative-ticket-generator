@@ -279,8 +279,8 @@
 
 /* TOP FOOTER */
 .top_footer {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     background-color: #4c4c4c;
     color: #ffffff;
 }
@@ -342,6 +342,12 @@
     padding-bottom: .5em;
 }
 
+/* BOTTOM FOOTER */
+.bottom_footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: .6rem;
+}
 
 @media (max-width: 600px) {
     .cta_section div { 
