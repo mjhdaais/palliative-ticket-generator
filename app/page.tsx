@@ -93,15 +93,18 @@ export default function Page() {
             </div>
         </div>
 
-        {/* Sub Section */}
-        {/* <div className={`${styles.sub_section}`}>
-            <div className={`${styles.container} ${styles.row}`}>
-                <p className={`${styles.col} ${styles.m8}`}>
+        {/* CTA Section */}
+        <div className={`${styles.cta_section}`}>
+            <div className={`${styles.container}`}>
+                <p>
                     Promoting Equitable Financial Assessments: Empowering Students through Transparent Evaluations
                 </p>
-                <button className={`${styles.col} ${styles.m4} `}>Submit Your Bio-data Now</button>
+                <p>
+                    <button>Submit Your Bio-data Now</button>
+                </p>
+                
             </div>
-        </div> */}
+        </div>
 
         {/* Footer */}
         {/* <div className={`${styles.footer}`}>
