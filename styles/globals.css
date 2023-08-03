@@ -25,17 +25,21 @@ body {
   background: linear-gradient(130deg, #18a73312 0%, rgba(217, 217, 217, 0.00) 100%);
 }
 
+.container {
+    /* border: 1px solid; */
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+/* HEADER */
 .header {
-    border: 1px solid;
+    /* border: 1px solid; */
     position: relative;
     width: 100%;
     height: 504px;
-    /* background-image: linear-gradient(to left, rgb(5 74 39 / 66%), #000000), 
-    url('../public/image/young-african-female-student-with-facemask-holding-her-textbooks-campus-area.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 37%; */
-    /* background: linear-gradient(to left, rgb(5 74 39 / 66%), #000000); */
   }
 
 .radial_background {
@@ -48,6 +52,52 @@ body {
 
 .header_image {
     z-index: 0;
+    /* background-position: 0 35%; */
+}
+
+/* NAV */
+.nav {
+    /* border: 1px solid; */
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    padding: .6em 0;
+    /* top: 0px;
+    left: 771px; */
+    /* right: calc( 0.25rem + 1px ); */
+
+}
+  
+.nav > div {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+ 
+.nav__content {
+    width: 100%;
+    max-width: 512px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+.nav__link {
+    text-decoration: none;
+    color: #d3d3d3;
+    font-weight: 100;
+    font-size: .6rem;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding-bottom: .2em;
+    cursor: pointer;
+}
+  
+.nav__link:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
   

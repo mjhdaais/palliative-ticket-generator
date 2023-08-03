@@ -5,6 +5,18 @@ const Header = () => {
     return (
         <header className="header">
             <div className="radial_background"></div>
+
+            <nav className="nav">
+                <div className="container">
+                    <div className="nav__content">
+                        <div className="nav__links">
+                            <a className="nav__link" href="#">Inquery</a>
+                            <a className="nav__link" href="#">FAQS</a>
+                        </div>
+                    </div>
+                </div>
+            </nav> 
+            
             <Image 
                 src={bgImage} 
                 alt={"Young african female student with facemask holding her textbooks campus area"}
@@ -14,16 +26,16 @@ const Header = () => {
                     height: '100%',
                 }}
             />
-            <nav className="nav">
-            <div className="container">
-                <div className="nav__content">
-                    <div className="nav__links">
-                        <a className="nav__link" href="#">Inquery</a>
-                        <a className="nav__link" href="#">FAQS</a>
+            {/* <nav className="nav">
+                <div className="container">
+                    <div className="nav__content">
+                        <div className="nav__links">
+                            <a className="nav__link" href="#">Inquery</a>
+                            <a className="nav__link" href="#">FAQS</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </nav>    
+            </nav>     */}
         
             <div className="container">
             <div className="header__content">
