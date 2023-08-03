@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+  background: linear-gradient(130deg, #18a73312 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+.header {
+    border: 1px solid;
+    width: 100%;
+    height: 504px;
+    /* background-image: linear-gradient(to left, rgb(5 74 39 / 66%), #000000), 
+    url('../public/image/young-african-female-student-with-facemask-holding-her-textbooks-campus-area.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 37%; */
+    /* background: linear-gradient(to left, rgb(5 74 39 / 66%), #000000); */
+  }
+
+.radial_background {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 62%;
+    background: linear-gradient(to left, rgb(5 74 39 / 66%), #000000);
+}
+
+.header_image {
+    z-index: 0;
+}
+
+  

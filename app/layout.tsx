@@ -1,17 +1,19 @@
-// import 'w3-css/w3.css';
-import './global.css'
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
+import '@styles/globals.css'
 
-export default function RootLayout({
+export const metadata = {
+    title: 'GLB'
+}
+
+const RootLayout = ({
     children,
 }: {
     children: React.ReactNode
-}) {
+}) => {
     return (
         <html lang="en">
         <body>{children}</body>
         </html>
     )
 }
+
+export default RootLayout
