@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 
-/* Custom Styles */
+/* CUSTOM STYLES */
 *,
 *::before,
 *::after {
@@ -42,7 +42,7 @@ body {
     height: 504px;
   }
 
-.radial_background {
+.radial__background {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -50,22 +50,17 @@ body {
     background: linear-gradient(to left, rgb(5 74 39 / 66%), #000000);
 }
 
-.header_image {
+.header__image {
     z-index: 0;
-    /* background-position: 0 35%; */
 }
 
 /* NAV */
 .nav {
-    /* border: 1px solid; */
+    border: 1px solid;
     width: 100%;
     z-index: 2;
     position: absolute;
     padding: .6em 0;
-    /* top: 0px;
-    left: 771px; */
-    /* right: calc( 0.25rem + 1px ); */
-
 }
   
 .nav > div {
@@ -100,4 +95,89 @@ body {
     border-bottom: 2px solid #ffffff;
 }
 
+/* HEADER CONTENT */
+.header__content {
+    border: 1px solid;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    padding-top: 2.5em;
+}
+
+.header__content h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+    border-left: 1px solid #c9dfcd;
+    padding: 1rem;
+    width: 100%;
+    max-width: 24ch;
+  }
   
+.header__content p {
+    width: 100%;
+    max-width: 55ch;
+    margin-top: 2.4rem;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #a3bba6;
+}
+
+button {
+    border: none;
+    background-color: #555555;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: .6rem;
+    font-weight: 500;
+}
+
+.header__search {
+    /* border: 1px solid; */
+    width: 100%;
+    max-width: 512px;
+    margin-top: 2em;
+}
+
+.search__form {
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background-color: #ffffff;
+    padding: .2em;
+    border-radius: 2px;
+}
+
+.search__input, .search__button {
+    padding: .7em;
+    border-radius: 2px;
+}
+
+.search__input {
+    flex: 80%;
+    margin-left: 2px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search__input::placeholder {
+    font-family: inherit;
+}
+
+.search__button {
+    flex: 20%;
+    padding: .8em 0;
+    color: white;
+    background: linear-gradient(45deg, #062b0d, #062b0d85);
+}
+
+.search__button:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: #b9bb8f;
+}
