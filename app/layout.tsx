@@ -1,7 +1,8 @@
 import '@styles/globals.css'
 
 export const metadata = {
-    title: 'GLB'
+    title: 'Biodata Evaluation for Government Student Loans',
+    description: 'Biodata evaluation for fair student loan assessments. Discover the ethical considerations and measures for equitable access to educational loan.'
 }
 
 const RootLayout = ({
