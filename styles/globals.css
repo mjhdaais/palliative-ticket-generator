@@ -194,7 +194,8 @@ button {
 @media (max-width: 768px) {
     /* HEADER */
     .header {
-        height: 459px;
+        /* height: 459px; */
+        height: 477px;
     }
 
     /* .header__content {
