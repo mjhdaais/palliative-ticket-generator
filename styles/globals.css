@@ -56,7 +56,7 @@ body {
 
 /* NAV */
 .nav {
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 100%;
     z-index: 2;
     position: absolute;
@@ -97,11 +97,11 @@ body {
 
 /* HEADER CONTENT */
 .header__content {
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 100%;
     z-index: 2;
     position: absolute;
-    padding-top: 2.5em;
+    margin-top: 4em;
 }
 
 .header__content h1 {
@@ -125,14 +125,14 @@ body {
     color: #a3bba6;
 }
 
-button {
+/* button {
     border: none;
     background-color: #555555;
     cursor: pointer;
     font-family: inherit;
     font-size: .6rem;
     font-weight: 500;
-}
+} */
 
 .header__search {
     /* border: 1px solid; */
@@ -172,6 +172,7 @@ button {
 .search__button {
     flex: 20%;
     padding: .8em 0;
+    /* padding: 1.3em 0; */
     color: white;
     background: linear-gradient(45deg, #062b0d, #062b0d85);
 }
@@ -179,5 +180,5 @@ button {
 .search__button:focus {
     outline-style: solid;
     outline-width: 2px;
-    outline-color: #b9bb8f;
+    outline-color: #a2cea2;
 }
