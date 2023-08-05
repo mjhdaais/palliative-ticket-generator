@@ -29,9 +29,7 @@ button {
     border: none;
     background-color: #555555;
     cursor: pointer;
-    font-family: inherit !important;
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-weight: 300; */
+    font-family: inherit;
 }
 
 .container {
@@ -195,15 +193,46 @@ button {
 .features_header {
     /* border: 1px solid; */
     margin-top: 2.5em;
-  }
+}
   
-  .features_header__content {
+.features_header__content {
     width: 100%;
     max-width: 32ch;
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.3;
-  }
+}
+
+/* FEATURES */
+.features { 
+    margin-top: 2.5em;
+}
+
+.features > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.feature i {
+    font-size: 1.5rem;
+    background: rgb(14 153 14 / 18%);
+    color: rgb(5 86 45 / 70%);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.feature h4 {
+    /* color: #444; */
+    font-weight: 400;
+}
+
+.feature p {
+    margin-top: 20px;
+    color: #747474;
+    font-weight: 300;
+}
 
 @media (max-width: 768px) {
     /* HEADER */
@@ -211,4 +240,12 @@ button {
         /* height: 459px; */
         height: 477px;
     }
+
+      /* FEATURES */
+    .features > div {
+        grid-template-columns: 1fr;
+    }
 }
+
+/* #171717 */
+/* #666666 */

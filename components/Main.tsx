@@ -1,3 +1,18 @@
+const Feature = () => {
+    return (
+        <div className="container">
+            <div className="feature">
+                <h4>Bio-data Submission</h4>
+                <p>
+                    Bio-data evaluation plays a crucial role in assessing the financial 
+                    capacity and eligibility of applicants in governmental student loan applications. 
+                    To ensure equitable financial assessments
+                </p>
+            </div>
+        </div>
+    )
+}
+
 const FeatureHeader = () => {
     return (
         <section className="features_header">
@@ -12,7 +27,13 @@ const FeatureHeader = () => {
 
 const Main = () => {
     return (
-        <FeatureHeader />
+        <main>
+            <FeatureHeader />
+            <section className="features">
+                <Feature />
+            </section>
+        </main>
+        
     )
 }
 
