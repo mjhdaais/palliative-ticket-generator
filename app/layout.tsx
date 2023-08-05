@@ -6,7 +6,14 @@ export const metadata = {
     openGraph: {
         title: 'Biodata Evaluation for Government Student Loans',
         description: 'Biodata evaluation for fair student loan assessments. Discover the ethical considerations and measures for equitable access to educational loan.',
-      }
+        images: [
+            {
+                url: '@public/image/og/og_image.png',
+                width: 800,
+                height: 600,
+              },
+        ]
+    }
 }
 
 const RootLayout = ({
