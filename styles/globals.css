@@ -28,8 +28,12 @@ body {
 button {
     border: none;
     background-color: #555555;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-family: inherit;
+}
+
+button, a {
+    cursor: pointer;
 }
 
 .container {
@@ -233,6 +237,10 @@ button {
     margin-top: 8px;
     color: #747474;
     font-weight: 300;
+}
+
+.feature p a {
+    color: rgb(0, 97, 187);
 }
 
 @media (max-width: 768px) {

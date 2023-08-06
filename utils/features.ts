@@ -3,7 +3,15 @@ interface Feature {
     excerpt: string;
 }
 
-const features: Feature[] = [
+// export const excerpt = (intro: string) => {
+//     return intro.substring(0, 130) + "..."
+// }
+
+export const excerpt = (intro: string, maxLength: number = 130) => {
+    return intro.substring(0, maxLength) + "...";
+}
+
+export const features: Feature[] = [
     {
         title: 'Biodata Submission',
         excerpt: 'Biodata evaluation plays a crucial role in assessing the financial capacity and eligibility of applicants in governmental student loan applications. To ensure equitable financial assessments',
@@ -22,6 +30,6 @@ const features: Feature[] = [
     },
 ];
 
-export default features
+// export default features
 
 // 'Safeguarding data privacy is paramount in governmental student loan applications to protect individuals personal information and ensure their trust in the process.'.substring(0, 130) + '...' + ' more'

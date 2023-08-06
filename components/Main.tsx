@@ -44,17 +44,30 @@
 
 // export default Main
 
-import features from "@utils/features";
+import { features, excerpt } from "@utils/features";
+
+// const Feature = (props: { feature: { title: string; excerpt: string } }) => {
+//     const { title, excerpt } = props.feature;
+//     return (
+//         <div className="feature">
+//             <h4>{title}</h4>
+//             <p>{excerpt(excerpt)}</p>
+//         </div>
+//     )
+// }
 
 const Feature = (props: { feature: { title: string; excerpt: string } }) => {
-    const { title, excerpt } = props.feature;
+    const { title, excerpt: featureExcerpt } = props.feature;
+    const shortenedExcerpt = excerpt(featureExcerpt);
     return (
-        // <div className="container">
-            <div className="feature">
-                <h4>{title}</h4>
-                <p>{excerpt}</p>
-            </div>
-        // </div>
+        <div className="feature">
+            <h4>{title}</h4>
+            <p>
+                {shortenedExcerpt}
+                <a href="#">more</a>
+            </p>
+            
+        </div>
     )
 }
 
