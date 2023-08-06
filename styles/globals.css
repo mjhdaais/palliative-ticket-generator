@@ -240,8 +240,74 @@ button, a {
 }
 
 .feature p a {
-    color: rgb(0, 97, 187);
+    color: #0061bb;
+    border-radius: 2px;
+    padding: 3px;
 }
+
+.feature p a:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #b4dbff;
+}
+
+/* CTA */
+.cta {
+    margin-top: 2.5em;
+    /* padding: 5em 0; */
+    padding: 2.5em 0;
+}
+  
+.cta__content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: end; */
+    align-items: center;
+}
+  
+.cta__paragraph {
+    /* border: 1px solid; */
+    width: 100%;
+    max-width: 40ch;
+    flex: 70%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #414141;
+}
+  
+.cta__button {
+    /* border: 1px solid; */
+    flex: 30%;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    /* justify-content: flex-end; */
+    /* padding: 1.3em 2.5em; */
+}
+
+.cta__button button {
+    /* flex: 20%; */
+    width: 70%;
+    font-size: .7rem;
+    /* padding: 1em 5em; */
+    padding: 0.7em;
+    font-weight: 500;
+    border-radius: 2px;
+    color: #f3f3f3;
+    background: linear-gradient(45deg, #062b0d, #062b0d85);
+    transition: .1s ease;
+}
+  
+.cta__button button:hover {
+    background-color: #062b0d85;
+}
+
+.cta__button button:focus {
+    outline-style: solid;
+    outline-width: 4px;
+    outline-color: #a2cea2;
+}
+
 
 @media (max-width: 768px) {
     /* HEADER */
@@ -253,6 +319,23 @@ button, a {
       /* FEATURES */
     .features > div {
         grid-template-columns: 1fr;
+    }
+
+    /* CTA */
+    .cta__content {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cta__paragraph,
+    .cta__button {
+        width: 100%;
+    }
+
+    .cta__button {
+        width: 50%;
+        margin-top: 10px;
     }
 }
 
