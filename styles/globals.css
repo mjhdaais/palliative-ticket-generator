@@ -329,9 +329,12 @@ button, a {
 } */
 
 .modal_content {
-    background-color: #ffffff;
-    padding: 20px;
+    /* background-color: #ffffff; */
+    background-color: #fafffb;
+    padding: 20px 20px 30px 20px;
     border-radius: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     border-top: 5px solid #084d15;
     width: 90%;
 }
@@ -341,11 +344,12 @@ button, a {
 }
 
 .modal_content p {
-    hyphens: auto;
+    /* hyphens: auto; */
+    text-justify: distribute;
     text-align: justify;
     word-spacing: -0.5px;    
     color: #747474;
-    margin-top: 28px;
+    margin-top: 25px;
 }
 
 .close {
