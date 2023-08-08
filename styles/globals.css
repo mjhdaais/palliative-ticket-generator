@@ -322,35 +322,59 @@ button, a {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.full_content_modal.open {
+/* .full_content_modal.open {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .modal_content {
-    background-color: #fefefe;
+    background-color: #ffffff;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    border-radius: 3px;
+    border-top: 5px solid #084d15;
+    width: 90%;
+}
+
+.modal_content h4 {
+    color: #222222;
+}
+
+.modal_content p {
+    hyphens: auto;
+    text-align: justify;
+    word-spacing: -0.5px;    
+    color: #747474;
+    margin-top: 28px;
 }
 
 .close {
-    color: #aaaaaa;
+    color: #747474;
     float: right;
     font-size: 28px;
-    font-weight: bold;
+    /* font-weight: bold; */
     cursor: pointer;
+    /* padding: 2px; */
+    /* margin-left: 30px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px; */
+    /* border: 1px solid red; */
 }
 
 .close:hover {
-    color: #000;
+    color: #222222;
     text-decoration: none;
+    /* outline-width: 2px;
+    outline-style: solid;
+    outline-color: #747474; */
 }
 
-.close.hide {
-    display: none;
-}
+/* .close:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #555555;
+} */
 
 @media (max-width: 768px) {
     /* HEADER */
