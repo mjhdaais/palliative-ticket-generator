@@ -9,9 +9,16 @@ const FeatureModal = (props) => {
     return (
         <div className="feature_modal">
             <div className="modal_content">
-                <span className="close" onClick={() => setShowFeatureModal(false)}>&times;</span>
-                <h4>{title}</h4>
+                <div className="modal_content_header">
+                    <div>
+                        {/* <span className="close" onClick={() => setShowFeatureModal(false)}>&times;</span> */}
+                        <h4>{title}</h4>
+                    </div>
+                </div>
                 <p>{description}</p>
+                <div>
+                    <span className="close" onClick={() => setShowFeatureModal(false)}>Close</span>
+                </div>
             </div>
         </div>
     )
