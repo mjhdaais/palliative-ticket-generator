@@ -2,10 +2,10 @@ import '@styles/globals.css'
 import og_image from '@public/image/og/og_image.png'
 
 export const metadata = {
-    title: 'Biodata Evaluation for Government Student Loans',
+    title: 'Biodata Evaluation for Student Loans',
     description: 'Biodata evaluation for fair student loan assessments. Discover the ethical considerations and measures for equitable access to educational loan.',
     openGraph: {
-        title: 'Biodata Evaluation for Government Student Loans',
+        title: 'Biodata Evaluation for Student Loans',
         description: 'Biodata evaluation for fair student loan assessments. Discover the ethical considerations and measures for equitable access to educational loan.',
         images: [
             {
