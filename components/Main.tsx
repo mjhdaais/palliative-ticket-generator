@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { features, excerpt } from "@utils/features";
+import { features, excerpt, domParser } from "@utils/features";
 
 const FeatureModal = (props) => {
     const { title, description, setShowFeatureModal } = props;
@@ -15,7 +15,8 @@ const FeatureModal = (props) => {
                         <h4>{title}</h4>
                     </div>
                 </div>
-                <p>{description}</p>
+                {/* <p>{description}</p> */}
+                <p dangerouslySetInnerHTML={{ __html: description }}></p>
                 <div>
                     <span className="close" onClick={() => setShowFeatureModal(false)}>Close</span>
                 </div>
@@ -30,7 +31,8 @@ const CTA = () => {
             <div className="container">
             <div className="cta__content">
                 <p className="cta__paragraph">
-                Promoting Equitable Financial Assessments: Empowering Students through Transparent Evaluations
+                    {/* Promoting Equitable Financial Assessments: Empowering Students through Transparent Evaluations */}
+                    Formalizing Student Funding: Biodata Submission in Accordance with Regulations
                 </p>
                 <p className="cta__button">
                     <button>Submit Your Biodata Now</button>
@@ -54,7 +56,7 @@ const Feature = (props) => {
             <h4>{excerptTitle}</h4>
             <hr />
             <p>
-                {excerpt(description)}
+                {excerpt(domParser(description))}
                 {showFeatureModal && 
                     <FeatureModal 
                         title={title} 
@@ -74,9 +76,9 @@ const FeatureHeader = () => {
     return (
         <section className="features_header">
             <div className="container">
-                <div className="features_header__content">
+                <p className="features_header__content">
                     Empowering Futures: Seamless Student Loan assessment with Data Privacy & Insights!
-                </div>
+                </p>
             </div>
         </section>
     )

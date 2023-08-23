@@ -1,12 +1,14 @@
 import '@components/Header'
-import Header from '@components/Header'
-import Main from '@components/Main'
+// import Header from '@components/Header'
+// import Main from '@components/Main'
+import GmailLabels from '@components/GmailLabels'
 
 const Home = () => {
     return (
         <>
-            <Header />
-            <Main />
+            {/* <Header /> */}
+            {/* <Main /> */}
+            <GmailLabels />
         </>
     )
 }

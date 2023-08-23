@@ -1,5 +1,5 @@
 import '@styles/globals.css'
-import og_image from '@public/image/og/og_image.png'
+// import og_image from '@public/image/og/og_image.png'
 
 export const metadata = {
     title: 'Biodata Evaluation for Student Loans',
@@ -31,3 +31,7 @@ const RootLayout = ({
 }
 
 export default RootLayout
+
+// govloansbio.com
+// support@govloansbio.com.ng
+// xoroceg946@backva.com

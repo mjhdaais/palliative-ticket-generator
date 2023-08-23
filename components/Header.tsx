@@ -20,7 +20,8 @@ const Header = () => {
             <div className="header__content">
                 <div className="container">
                     <h1>Student Loan Biodata <br /> Submission</h1>
-                    <p>Fuel Your Educational Dreams: Unlock Your Potential, Embrace Learning, and Soar Towards Success!</p>
+                    {/* <p>Fuel Your Educational Dreams: Unlock Your Potential, Embrace Learning, and Soar Towards Success!</p> */}
+                    <p>Submission of biodata for the purpose of thorough review, meticulous assessment, and comprehensive evaluation</p>
                     <div className="header__search">
                         <form className="search__form">
                             <input className="search__input" type="search" placeholder="Check Assessment Status using NIN (National Identification Number)" />
